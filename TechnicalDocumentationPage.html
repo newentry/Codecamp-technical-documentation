@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Playback SDK</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <nav id="navbar">
+    <header> Playback SDK Overview</header>
+    <ul>
+      <a class="nav-link" href="#About_the_SDK" rel="internal">
+        <li>About the SDK</li>
+      </a>
+      <a class="nav-link" href="#Requirements" rel="internal">
+        <li>Requirements</li>
+      </a>
+      <a class="nav-link" href="#Supported_Browsers" rel="internal">
+        <li>Supported Browsers</li>
+      </a>
+      <a class="nav-link" href="#Tutorial_and_Examples" rel="internal">
+        <li>Tutorial and Examples</li>
+      </a>
+      <a class="nav-link" href="#API_Documentation" rel="internal">
+        <li>API Documentation</li>
+      </a>
+      <a class="nav-link" href="#Issues" rel="internal">
+        <li>Issues</li>
+      </a>
+      <a class="nav-link" href="#Frequently_Asked_Questions" rel="internal">
+        <li>Frequently Asked Questions</li>
+      </a>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section id="Web_Playback_SDK"class="main-section2">
+      <header>
+        Web Playback SDK
+      </header>
+      <article>
+        <p>This SDK must not be used in commercial projects without Spotify's prior written approval</p>
+        <p><strong>Important</strong>: The Web Playback SDK is currently in Beta. The content and functionality may change without warning in future versions.</p>
+        <p>By using Spotify developer tools, you accept our Developer Terms of Use. They contain important information about what you can and can’t do with our developer tools. Please read them carefully.</p>
+      </article>
+    </section>
+    <section id="About_the_SDK" class="main-section">
+      <header>About the SDK</header>
+      <article>
+        <p>The Web Playback SDK is client-side JavaScript library which allows you to create a new player in Spotify Connect and play any audio track from Spotify in the browser via Encrypted Media Extensions. It’s the same technology we use to power our Web Player experience.</p>
+        <p>Some things you can do with the Web Playback SDK:</p>
+        <ul>
+          <li>Create a new player in Spotify Connect</li>
+          <li>Stream an audio track in supported browsers</li>
+          <li>Get metadata for the current track</li>
+          <li>Get metadata about the user’s listening session</li>
+          <li>Control local playback (pause, resume, volume, etc)</li>
+        </ul>
+        <p>Some things you cannot do with the Web Playback SDK:</p>
+        <ul>
+          <li>Download audio / video</li>
+          <li>Manipulate audio / video</li>
+          <li>Authenticate the user with Spotify (Check out Web API using OAuth.)</li>
+          <li>Control playback of other devices (Check out the Connect Web API.)</li>
+          <li>Play a track from a Spotify URI (You can do this through the Web API. Pause/resume can be done inside the SDK.)</li>
+          <li>Access the Web API (You can integrate this separately from our Web API Console.)</li>
+        </ul>
+        <p>Please refer to the Developer Terms of Use for more information about what you can and cannot do with our developer tools.</p>
+      </article>
+    </section>
+    <section id="Requirements" class="main-section">
+      <header>Requirements</header>
+      <article>
+        <ul>
+          <li>A Client ID and Client Secret, which can be obtained from our Dashboard</li>
+          <li>Authenticated users must have a valid Spotify Premium subscription</li>
+          <li>A supported web browser running on the user’s device</li>
+        </ul>
+      </article>
+    </section>
+    <section id="Supported_Browsers" class="main-section">
+      <header>Supported Browsers</header>
+      <article>
+        <table>
+  <thead>
+    <tr>
+      <th>Operating System</th>
+      <th>Browsers</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Mac/Windows/Linux</strong></td>
+      <td>Chrome, Firefox, IE*</td>
+      <td>✓ Supported</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>Microsoft Edge</td>
+      <td>✓ Supported</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>Safari</td>
+      <td>✕ Not Supported</td>
+    </tr>
+    <tr>
+      <td><strong>Android</strong></td>
+      <td>Chrome, Firefox</td>
+      <td>✕ Not Supported</td>
+    </tr>
+    <tr>
+      <td><strong>iOS</strong></td>
+      <td>Safari, Chrome</td>
+      <td>✕ Not Supported</td>
+    </tr>
+  </tbody>
+</table>
+        </br>
+        <p>* IE 11 or above. Must be on Windows 8.1 or above.</p>
+      </article>
+    </section>
+    <section id="Tutorial_and_Examples" class="main-section">
+      <header>Tutorial and Examples</header>
+      <article>
+        <p>We provide a beginner’s tutorial to help you get started with the Web Playback SDK. It leads you through the creation of a simple web app that makes a Spotify Player instance that can be controlled through Spotify Connect.</p>
+      </article>
+    </section>
+    <section id="API_Documentation" class="main-section">
+      <header>API Documentation</header>
+      <article>
+        <p>The API documentation is available online.</p>
+      </article>
+    </section>
+    <section id="Issues" class="main-section">
+      <header>Issues</header>
+      <article>
+        <p>Please report problems with this SDK through the public issue tracker on GitHub.</p>
+      </article>
+    </section>
+    <section id="Frequently_Asked_Questions" class="main-section">
+      <header>Frequently Asked Questions</header>
+      <article>
+        <p><strong>Does the Web Playback SDK work on mobile devices?</strong></p>
+        <p>No, the Web Playback SDK works only in supported browsers.</p>
+      </article>
+    </section>
+  </main>
+  
+</body>
+</html>
